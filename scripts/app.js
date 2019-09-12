@@ -70,3 +70,12 @@ search(inputLocality);
 search(inputTract);
 search(inputSnt);
 search(inputCottage);
+
+(function($){
+    $(window).on("load",function(){
+        $(".item-wrap").mCustomScrollbar({
+            alwaysShowScrollbar:2,
+            theme: "dark-2"
+        });
+    });    
+})(jQuery);

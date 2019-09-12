@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/jquery.mCustomScrollbar.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.css">
 
@@ -77,50 +78,51 @@
                                 <div class="form__item-block">
                                     <input type="text" class="form__item-input" id="input-tract" placeholder="Поиск" autocomplete="off">
                                     <ul class="form__item-choice">
-                                        <li class="form__check">
-                                            <label class="form__check-elem">
-                                                <input type="checkbox" name="tract" class="form__checkbox"> 
-                                                <div class="form__checkbox-fake"></div>
-                                                <div class="form__chek-text">Червишевский</div>
-                                            </label>                                                        
-                                            <div class="form__check-count">
-                                                123
-                                            </div>
-                                        </li>
-                                        <li class="form__check">
-                                            <label class="form__check-elem">
-                                                <input type="checkbox" name="tract" class="form__checkbox"> 
-                                                <div class="form__checkbox-fake"></div>
-                                                <div class="form__chek-text">Московский</div>
-                                            </label>                                                                                                  
-                                            <div class="form__check-count">
-                                                1234
-                                            </div>
-                                        </li>
-                                        <li class="form__check">
-                                            <label class="form__check-elem">
-                                                <input type="checkbox" name="tract" class="form__checkbox"> 
-                                                <div class="form__checkbox-fake"></div>
-                                                <div class="form__chek-text">Тобольский</div>
-                                            </label>                                                                                                   
-                                            <div class="form__check-count">
-                                                430
-                                            </div>
-                                        </li>
-                                        <li class="form__check">
-                                            <label class="form__check-elem">
-                                                <input type="checkbox" name="tract" class="form__checkbox"> 
-                                                <div class="form__checkbox-fake"></div>
-                                                <div class="form__chek-text">Салаирский</div>
-                                            </label>                                                                                                   
-                                            <div class="form__check-count">
-                                                89
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>                               
-                            </li>
-                                                        <!--Населенный пункт-->
+                                        <div class="item-wrap mCustomScrollbar" data-mcs-theme="dark">                                                                                                                                                                            
+                                            <li class="form__check">
+                                                <label class="form__check-elem">
+                                                    <input type="checkbox" name="tract" class="form__checkbox"> 
+                                                    <div class="form__checkbox-fake"></div>
+                                                    <div class="form__chek-text">Червишевский</div>
+                                                </label>                                                        
+                                                <div class="form__check-count">
+                                                    123
+                                                </div>
+                                            </li>
+                                            <li class="form__check">
+                                                <label class="form__check-elem">
+                                                    <input type="checkbox" name="tract" class="form__checkbox"> 
+                                                    <div class="form__checkbox-fake"></div>
+                                                    <div class="form__chek-text">Московский</div>
+                                                </label>                                                                                                  
+                                                <div class="form__check-count">
+                                                    1234
+                                                </div>
+                                            </li>
+                                            <li class="form__check">
+                                                <label class="form__check-elem">
+                                                    <input type="checkbox" name="tract" class="form__checkbox"> 
+                                                    <div class="form__checkbox-fake"></div>
+                                                    <div class="form__chek-text">Тобольский</div>
+                                                </label>                                                                                                   
+                                                <div class="form__check-count">
+                                                    430
+                                                </div>
+                                            </li>
+                                            <li class="form__check">
+                                                <label class="form__check-elem">
+                                                    <input type="checkbox" name="tract" class="form__checkbox"> 
+                                                    <div class="form__checkbox-fake"></div>
+                                                    <div class="form__chek-text">Салаирский</div>
+                                                </label>                                                                                                   
+                                                <div class="form__check-count">
+                                                    89
+                                                </div>
+                                            </li>
+                                        </div>
+                                    </ul>                               
+                                </div>
+                            </li>                        <!--Населенный пункт-->
 
                             <li class="form__item">
                                 <div class="form__item-title">
@@ -129,66 +131,68 @@
                                 <div class="form__item-block">
                                     <input type="text" class="form__item-input" id="input-locality" placeholder="Поиск" autocomplete="off">
                                     <ul class="form__item-choice" id="locality">
-                                        <li class="form__check">
-                                            <label class="form__check-elem">
-                                                <input type="checkbox" name="locality" class="form__checkbox"> 
-                                                <div class="form__checkbox-fake"></div>
-                                                <div class="form__chek-text">Луговое</div>
-                                            </label>                                           
-                                            <div class="form__check-count">
-                                                123
-                                            </div>
-                                        </li>
-                                        <li class="form__check">
-                                            <label class="form__check-elem">
-                                                <input type="checkbox" name="locality" class="form__checkbox"> 
-                                                <div class="form__checkbox-fake"></div>
-                                                <div class="form__chek-text">Зеленые холмы</div>
-                                            </label>                                            
-                                            <div class="form__check-count">
-                                                1324
-                                            </div>
-                                        </li>
-                                        <li class="form__check">
-                                            <label class="form__check-elem">
-                                                <input type="checkbox" name="locality" class="form__checkbox"> 
-                                                <div class="form__checkbox-fake"></div>
-                                                <div class="form__chek-text">Кулаково</div>
-                                            </label>                                           
-                                            <div class="form__check-count">
-                                                89
-                                            </div>
-                                        </li>
-                                        <li class="form__check">
-                                            <label class="form__check-elem">
-                                                <input type="checkbox" name="locality" class="form__checkbox"> 
-                                                <div class="form__checkbox-fake"></div>
-                                                <div class="form__chek-text">Червишево</div>
-                                            </label>                                            
-                                            <div class="form__check-count">
-                                                7
-                                            </div>
-                                        </li>
-                                        <li class="form__check">
-                                            <label class="form__check-elem">
-                                                <input type="checkbox" name="locality" class="form__checkbox"> 
-                                                <div class="form__checkbox-fake"></div>
-                                                <div class="form__chek-text">Якуши</div>
-                                            </label>                                            
-                                            <div class="form__check-count">
-                                                96
-                                            </div>
-                                        </li>
-                                        <li class="form__check">
-                                            <label class="form__check-elem">
-                                                <input type="checkbox" name="locality" class="form__checkbox"> 
-                                                <div class="form__checkbox-fake"></div>
-                                                <div class="form__chek-text">Ярд</div>
-                                            </label>                                            
-                                            <div class="form__check-count">
-                                                89
-                                            </div>
-                                        </li>                                        
+                                        <div class="item-wrap">  
+                                            <li class="form__check">
+                                                <label class="form__check-elem">
+                                                    <input type="checkbox" name="locality" class="form__checkbox"> 
+                                                    <div class="form__checkbox-fake"></div>
+                                                    <div class="form__chek-text">Луговое</div>
+                                                </label>                                           
+                                                <div class="form__check-count">
+                                                    123
+                                                </div>
+                                            </li>
+                                            <li class="form__check">
+                                                <label class="form__check-elem">
+                                                    <input type="checkbox" name="locality" class="form__checkbox"> 
+                                                    <div class="form__checkbox-fake"></div>
+                                                    <div class="form__chek-text">Зеленые холмы</div>
+                                                </label>                                            
+                                                <div class="form__check-count">
+                                                    1234
+                                                </div>
+                                            </li>
+                                            <li class="form__check">
+                                                <label class="form__check-elem">
+                                                    <input type="checkbox" name="locality" class="form__checkbox"> 
+                                                    <div class="form__checkbox-fake"></div>
+                                                    <div class="form__chek-text">Кулаково</div>
+                                                </label>                                           
+                                                <div class="form__check-count">
+                                                    89
+                                                </div>
+                                            </li>
+                                            <li class="form__check">
+                                                <label class="form__check-elem">
+                                                    <input type="checkbox" name="locality" class="form__checkbox"> 
+                                                    <div class="form__checkbox-fake"></div>
+                                                    <div class="form__chek-text">Червишево</div>
+                                                </label>                                            
+                                                <div class="form__check-count">
+                                                    7
+                                                </div>
+                                            </li>
+                                            <li class="form__check">
+                                                <label class="form__check-elem">
+                                                    <input type="checkbox" name="locality" class="form__checkbox"> 
+                                                    <div class="form__checkbox-fake"></div>
+                                                    <div class="form__chek-text">Якуши</div>
+                                                </label>                                            
+                                                <div class="form__check-count">
+                                                    96
+                                                </div>
+                                            </li>
+                                            <li class="form__check">
+                                                <label class="form__check-elem">
+                                                    <input type="checkbox" name="locality" class="form__checkbox"> 
+                                                    <div class="form__checkbox-fake"></div>
+                                                    <div class="form__chek-text">Ярд</div>
+                                                </label>                                            
+                                                <div class="form__check-count">
+                                                    89
+                                                </div>
+                                            </li>
+                                        </div>                                      
                                     </ul>
                                 </div>                                
                             </li>
@@ -200,56 +204,58 @@
                                 <div class="form__item-block">
                                     <input type="text" class="form__item-input" id="input-snt" placeholder="Поиск" autocomplete="off">
                                     <ul class="form__item-choice">
-                                        <li class="form__check">
-                                            <label class="form__check-elem">
-                                                <input type="checkbox" name="snt" class="form__checkbox"> 
-                                                <div class="form__checkbox-fake"></div>
-                                                <div class="form__chek-text">Элита</div>
-                                            </label>                                            
-                                            <div class="form__check-count">
-                                                123
-                                            </div>
-                                        </li>
-                                        <li class="form__check">
-                                            <label class="form__check-elem">
-                                                <input type="checkbox" name="snt" class="form__checkbox"> 
-                                                <div class="form__checkbox-fake"></div>
-                                                <div class="form__chek-text">Тура</div>
-                                            </label>                                            
-                                            <div class="form__check-count">
-                                                1234
-                                            </div>
-                                        </li>
-                                        <li class="form__check">
-                                            <label class="form__check-elem">
-                                                <input type="checkbox" name="snt" class="form__checkbox"> 
-                                                <div class="form__checkbox-fake"></div>
-                                                <div class="form__chek-text">Зеленый бор</div>
-                                            </label>                                            
-                                            <div class="form__check-count">
-                                                430
-                                            </div>
-                                        </li>
-                                        <li class="form__check">
-                                            <label class="form__check-elem">
-                                                <input type="checkbox" name="snt" class="form__checkbox"> 
-                                                <div class="form__checkbox-fake"></div>
-                                                <div class="form__chek-text">Автомобилист</div>
-                                            </label>                                            
-                                            <div class="form__check-count">
-                                                12
-                                            </div>
-                                        </li>
-                                        <li class="form__check">
-                                            <label class="form__check-elem">
-                                                <input type="checkbox" name="snt" class="form__checkbox"> 
-                                                <div class="form__checkbox-fake"></div>
-                                                <div class="form__chek-text">Строитель</div>
-                                            </label>                                            
-                                            <div class="form__check-count">
-                                                598
-                                            </div>
-                                        </li>
+                                        <div class="item-wrap">  
+                                            <li class="form__check">
+                                                <label class="form__check-elem">
+                                                    <input type="checkbox" name="snt" class="form__checkbox"> 
+                                                    <div class="form__checkbox-fake"></div>
+                                                    <div class="form__chek-text">Элита</div>
+                                                </label>                                            
+                                                <div class="form__check-count">
+                                                    123
+                                                </div>
+                                            </li>
+                                            <li class="form__check">
+                                                <label class="form__check-elem">
+                                                    <input type="checkbox" name="snt" class="form__checkbox"> 
+                                                    <div class="form__checkbox-fake"></div>
+                                                    <div class="form__chek-text">Тура</div>
+                                                </label>                                            
+                                                <div class="form__check-count">
+                                                    1234
+                                                </div>
+                                            </li>
+                                            <li class="form__check">
+                                                <label class="form__check-elem">
+                                                    <input type="checkbox" name="snt" class="form__checkbox"> 
+                                                    <div class="form__checkbox-fake"></div>
+                                                    <div class="form__chek-text">Зеленый бор</div>
+                                                </label>                                            
+                                                <div class="form__check-count">
+                                                    430
+                                                </div>
+                                            </li>
+                                            <li class="form__check">
+                                                <label class="form__check-elem">
+                                                    <input type="checkbox" name="snt" class="form__checkbox"> 
+                                                    <div class="form__checkbox-fake"></div>
+                                                    <div class="form__chek-text">Автомобилист</div>
+                                                </label>                                            
+                                                <div class="form__check-count">
+                                                    12
+                                                </div>
+                                            </li>
+                                            <li class="form__check">
+                                                <label class="form__check-elem">
+                                                    <input type="checkbox" name="snt" class="form__checkbox"> 
+                                                    <div class="form__checkbox-fake"></div>
+                                                    <div class="form__chek-text">Строитель</div>
+                                                </label>                                            
+                                                <div class="form__check-count">
+                                                    598
+                                                </div>
+                                            </li>
+                                        </div>
                                     </ul>
                                 </div>
                             </li>
@@ -261,86 +267,88 @@
                                 <div class="form__item-block">
                                     <input type="text" class="form__item-input" id="input-cottage" placeholder="Поиск" autocomplete="off">
                                     <ul class="form__item-choice">
-                                        <li class="form__check">
-                                            <label class="form__check-elem">
-                                                <input type="checkbox" name="cottage" class="form__checkbox"> 
-                                                <div class="form__checkbox-fake"></div>
-                                                <div class="form__chek-text">Калинка</div>
-                                            </label>                                            
-                                            <div class="form__check-count">
-                                                123
-                                            </div>
-                                        </li>                                        
-                                        <li class="form__check">
-                                            <label class="form__check-elem">
-                                                <input type="checkbox" name="cottage" class="form__checkbox"> 
-                                                <div class="form__checkbox-fake"></div>
-                                                <div class="form__chek-text">Зубарево хиллз</div>
-                                            </label>                                            
-                                            <div class="form__check-count">
-                                                1234
-                                            </div>
-                                        </li>
-                                        <li class="form__check">
-                                            <label class="form__check-elem">
-                                                <input type="checkbox" name="cottage" class="form__checkbox"> 
-                                                <div class="form__checkbox-fake"></div>
-                                                <div class="form__chek-text">Сосенка</div>
-                                            </label>                                            
-                                            <div class="form__check-count">
-                                                430
-                                            </div>
-                                        </li>
-                                        <li class="form__check">
-                                            <label class="form__check-elem">
-                                                <input type="checkbox" name="cottage" class="form__checkbox"> 
-                                                <div class="form__checkbox-fake"></div>
-                                                <div class="form__chek-text">Три сосны</div>
-                                            </label>                                            
-                                            <div class="form__check-count">
-                                                89
-                                            </div>
-                                        </li>
-                                        <li class="form__check">
-                                            <label class="form__check-elem">
-                                                <input type="checkbox" name="cottage" class="form__checkbox"> 
-                                                <div class="form__checkbox-fake"></div>
-                                                <div class="form__chek-text">Есенино</div>
-                                            </label>                                            
-                                            <div class="form__check-count">
-                                                9
-                                            </div>
-                                        </li>
-                                        <li class="form__check">
-                                            <label class="form__check-elem">
-                                                <input type="checkbox" name="cottage" class="form__checkbox"> 
-                                                <div class="form__checkbox-fake"></div>
-                                                <div class="form__chek-text">Кочубеево</div>
-                                            </label>                                            
-                                            <div class="form__check-count">
-                                                29
-                                            </div>
-                                        </li>
-                                        <li class="form__check">
-                                            <label class="form__check-elem">
-                                                <input type="checkbox" name="cottage" class="form__checkbox"> 
-                                                <div class="form__checkbox-fake"></div>
-                                                <div class="form__chek-text">Олимпия</div>
-                                            </label>                                            
-                                            <div class="form__check-count">
-                                                87
-                                            </div>
-                                        </li>
-                                        <li class="form__check">
-                                            <label class="form__check-elem">
-                                                <input type="checkbox" name="cottage" class="form__checkbox"> 
-                                                <div class="form__checkbox-fake"></div>
-                                                <div class="form__chek-text">Вершины</div>
-                                            </label>                                            
-                                            <div class="form__check-count">
-                                                0
-                                            </div>
-                                        </li>
+                                        <div class="item-wrap">  
+                                            <li class="form__check">
+                                                <label class="form__check-elem">
+                                                    <input type="checkbox" name="cottage" class="form__checkbox"> 
+                                                    <div class="form__checkbox-fake"></div>
+                                                    <div class="form__chek-text">Калинка</div>
+                                                </label>                                            
+                                                <div class="form__check-count">
+                                                    123
+                                                </div>
+                                            </li>                                        
+                                            <li class="form__check">
+                                                <label class="form__check-elem">
+                                                    <input type="checkbox" name="cottage" class="form__checkbox"> 
+                                                    <div class="form__checkbox-fake"></div>
+                                                    <div class="form__chek-text">Зубарево хиллз</div>
+                                                </label>                                            
+                                                <div class="form__check-count">
+                                                    1234
+                                                </div>
+                                            </li>
+                                            <li class="form__check">
+                                                <label class="form__check-elem">
+                                                    <input type="checkbox" name="cottage" class="form__checkbox"> 
+                                                    <div class="form__checkbox-fake"></div>
+                                                    <div class="form__chek-text">Сосенка</div>
+                                                </label>                                            
+                                                <div class="form__check-count">
+                                                    430
+                                                </div>
+                                            </li>
+                                            <li class="form__check">
+                                                <label class="form__check-elem">
+                                                    <input type="checkbox" name="cottage" class="form__checkbox"> 
+                                                    <div class="form__checkbox-fake"></div>
+                                                    <div class="form__chek-text">Три сосны</div>
+                                                </label>                                            
+                                                <div class="form__check-count">
+                                                    89
+                                                </div>
+                                            </li>
+                                            <li class="form__check">
+                                                <label class="form__check-elem">
+                                                    <input type="checkbox" name="cottage" class="form__checkbox"> 
+                                                    <div class="form__checkbox-fake"></div>
+                                                    <div class="form__chek-text">Есенино</div>
+                                                </label>                                            
+                                                <div class="form__check-count">
+                                                    9
+                                                </div>
+                                            </li>
+                                            <li class="form__check">
+                                                <label class="form__check-elem">
+                                                    <input type="checkbox" name="cottage" class="form__checkbox"> 
+                                                    <div class="form__checkbox-fake"></div>
+                                                    <div class="form__chek-text">Кочубеево</div>
+                                                </label>                                            
+                                                <div class="form__check-count">
+                                                    29
+                                                </div>
+                                            </li>
+                                            <li class="form__check">
+                                                <label class="form__check-elem">
+                                                    <input type="checkbox" name="cottage" class="form__checkbox"> 
+                                                    <div class="form__checkbox-fake"></div>
+                                                    <div class="form__chek-text">Олимпия</div>
+                                                </label>                                            
+                                                <div class="form__check-count">
+                                                    87
+                                                </div>
+                                            </li>
+                                            <li class="form__check">
+                                                <label class="form__check-elem">
+                                                    <input type="checkbox" name="cottage" class="form__checkbox"> 
+                                                    <div class="form__checkbox-fake"></div>
+                                                    <div class="form__chek-text">Вершины</div>
+                                                </label>                                            
+                                                <div class="form__check-count">
+                                                    0
+                                                </div>
+                                            </li>
+                                        </div>
                                     </ul>
                                 </div>
                             </li>
@@ -364,6 +372,7 @@
         </div>
     </div>
     <script src="scripts/jquery-3.3.1.js"></script>
+    <script src="//cdn.jsdelivr.net/jquery.mcustomscrollbar/3.0.6/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="scripts/app.js"></script>   
 </body>
 </html>
